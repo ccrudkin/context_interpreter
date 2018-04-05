@@ -9,11 +9,11 @@ with open(cwd + '/local/config.json', 'r') as f:
 	config = json.load(f)
 
 reddit = praw.Reddit(user_agent=config['user_agent'],
-                     client_id=config['client_id'], 
-					 client_secret=config['client_secret'])
+					client_id=config['client_id'], 
+					client_secret=config['client_secret'])
 
-keyword = 'freedom'
-sub = 'socialism'
+keyword = 'i-25'
+sub = 'denver'
 words = {}
 omit = ['the', 'a', 'an', 'that', 'this', 'to', 'for', 'of', 'on', 'in', 'but', 'and', '-',
          'is', 'are', 'was', '[oc]']
